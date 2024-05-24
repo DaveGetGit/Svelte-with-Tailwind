@@ -3,8 +3,7 @@
 
 	let tabs = [
 		{ name: 'Projects', link: '#projects' },
-		{ name: 'About', link: '#about' },
-		{ name: 'Blog', link: '#blog' }
+		{ name: 'About', link: '#about' }
 	];
 </script>
 
@@ -17,7 +16,7 @@
 	</h1>
 	<div class="sm:flex ml-auto pr-4 items-center gap-4 hidden">
 		{#each tabs as tab, index}
-			<a class="duration-200 hover:text-violet-400" href="tab.link">
+			<a class="duration-200 hover:text-violet-400" href={tab.link}>
 				<p>{tab.name}</p>
 			</a>
 		{/each}
